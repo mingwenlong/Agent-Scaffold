@@ -1,0 +1,18 @@
+provider: ollama
+model_name: gpt-oss:20b
+max_new_tokens: 256
+temperature: 0.7
+device: cpu
+mcp_servers:
+  - name: github
+    command: mcp-github
+    args: []
+    env: {}
+  - name: filesystem
+    command: mcp-filesystem
+    args: []
+    env: {}
+  - name: semgrep
+    command: mcp-semgrep
+    args: []
+    env: {}
